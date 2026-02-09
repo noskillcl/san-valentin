@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felices juntos</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="fondo-gatos-2 center">
+
+<div class="card">
+  <h1>😽💖 ¡Lo sabía amor!</h1>
+  <p>Ahora eres mía para siempre 🐾</p>
+  <p>Ver como me miras😈</p>
+  <p>Cada día te recordaré que eres mía 💘</p>
+  <p class="susurro">no hay escapatoria… y me encanta 😼</p>
+</div>
+
+<audio src="sounds/felicidad.mp3" autoplay></audio>
+
+<script>
+// Generar corazones flotando
+for(let i=0;i<10;i++){
+  const c = document.createElement("div");
+  c.className="corazon";
+  c.style.left = Math.random()*90+"%";
+  c.style.animationDuration = (3 + Math.random()*3) + "s";
+  document.body.appendChild(c);
+}
+</script>
+
+</body>
+</html>

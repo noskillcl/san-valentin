@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acceso</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="acceso center">
+
+  <div class="card">
+    <h2>Solo tú puedes entrar</h2>
+    <p>Si no sabes la respuesta, no eres tú.</p>
+
+    <input type="password" id="respuesta" placeholder="respuesta secreta">
+    <button onclick="verificar()">Entrar</button>
+    <p class="susurro">te estoy esperando</p>
+  </div>
+
+<script>
+  function verificar() {
+    const correcta = "michi";
+    const r = document.getElementById("respuesta").value.toLowerCase();
+    window.location.href = r === correcta ? "index.html" : "no-bienvenido.html";
+  }
+</script>
+
+</body>
+</html>
