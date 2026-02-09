@@ -72,4 +72,27 @@ button:active { transform: scale(0.95); }
 .acceso {
   background: linear-gradient(135deg, #222222, #550055);
   color: white;
+
+}
+/* ===== TEXTO ACCESO ===== */
+.acceso .card h2,
+.acceso .card p,
+.acceso .card input,
+.acceso .card button,
+.acceso .susurro {
+  color: #ffe6f0; /* rosa muy claro */
+  text-shadow: 1px 1px 3px #550055; /* sombra para resaltar */
+}
+
+/* input placeholder */
+.acceso input::placeholder {
+  color: #ffb3d9;
+  opacity: 1;
+}
+
+/* ===== TEXTO NO BIENVENIDO ===== */
+.fondo-rechazo .card h1,
+.fondo-rechazo .card p {
+  color: #ffcccc; /* rosa pálido sobre fondo rojo oscuro */
+  text-shadow: 1px 1px 2px #330000;
 }
